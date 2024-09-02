@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ html{
+    scroll-behavior: smooth;
+    height: 100%;
+} 
+body{
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 15px !important;
+    /* margin-top: 70px; */
+    /* font-family: 'roboto', sans-serif; */
+} 
+
+a{
+    text-decoration: none !important;
+}
+
+section {
+    padding-bottom: 100px;
+}
+
+.text-main {
+    color: #f0498c;
+}
+
+label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 1px;
+   }
+
+.sec-title {
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 600;
+    letter-spacing: 1px;
+    color: #f0498c;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sec-title::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 80px;
+    background-color: #f0498c;
+    border-radius: 40px;
+}
+
+/* btn */
+.btn-main {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn-main:hover,
+.btn-main:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.btn-main:active {
+  opacity: .5;
+}
