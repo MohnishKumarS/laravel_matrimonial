@@ -75,7 +75,7 @@
     </div>
 </div> --}}
 
-    <div class="page-register">
+    <div class="page-register mb-5">
         <div class="container">
             <div class="row flex-column-reverse flex-lg-row align-items-lg-center">
                 <div class="col-lg-6">
@@ -100,7 +100,7 @@
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" name="mobile" value="{{ old('mobile') }}"
-                                        placeholder="Enter your Mobile" maxlength="10">
+                                        placeholder="Enter your Mobile" onkeyup="this.value = this.value.replace(/[^0-9]/g,'')" maxlength="10">
                                     <label for="floatingInput">Enter your Mobile</label>
                                     @error('mobile')
                                         <div class="text-danger">{{ $message }}</div>
@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="form-floating mb-3">
                                     <select class="form-select" name="relationship">
-                                        <option value="" selected>Profile Created For</option>
+                                        <option value="" selected disabled>Profile Created For</option>
                                         <option value="Son">Son</option>
                                         <option value="Daughter">Daughter</option>
                                         <option value="Siblings">Siblings</option>
@@ -148,7 +148,7 @@
                                     <button class="btn-main w-100" type="submit">Register</button>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <p>Already have an account? <a href="{{route('login')}}" class="text-main fw-bold">Login</a></p>
+                                    <p class="sub-desc">Already have an account? <a href="{{route('login')}}" class="text-main fw-bold">Login</a></p>
                                 </div>
                             </div>
                         </form>
@@ -157,4 +157,6 @@
             </div>
         </div>
     </div>
+
 @endsection
+

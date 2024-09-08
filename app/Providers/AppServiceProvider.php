@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\City;
+use App\Models\State;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +22,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $states = State::all();
+        $cities = City::all();
+        View::share('state',$states);
+        View::share('city',$cities);
     }
 }

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="author" content="">
+    
     <title>@yield('title')</title>
+
+    <link rel="shortcut icon" href="{{asset('image/common/logo.png')}}" type="image/x-icon">
     <!-- Primary Meta tags -->
 
     <!-- css -->

@@ -24,10 +24,13 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'name' => $this->faker->name(),
+            'email' => $this->faker->unique()->safeEmail(),
+            'mobile' => $this->faker->numerify('##########'), // Generates a 10-digit mobile number
+            'relationship' => $this->faker->randomElement(['Son', 'Daughter', 'Siblings', 'Friend', 'Relative', 'Self']),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'role' => 'user', // Default role is 'user' for new users. Change it to 'admin' if you want to create admin users.
             'remember_token' => Str::random(10),
         ];
     }

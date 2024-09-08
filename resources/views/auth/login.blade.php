@@ -71,7 +71,7 @@
     </div>
 </div> --}}
 
-<div class="page-login">
+<div class="page-login mb-5">
     <div class="container">
         <div class="row flex-column-reverse flex-lg-row align-items-lg-center">
             <div class="col-lg-6">
@@ -107,7 +107,7 @@
                                 <button class="btn-main w-100" type="submit">Login</button>
                             </div>
                             <div class="text-center mt-3">
-                                <p>Don't have an account?  <a href="{{route('register')}}" class="text-main fw-bold">Register</a></p>
+                                <p class="sub-desc">Don't have an account?  <a href="{{route('register')}}" class="text-main fw-bold">Register</a></p>
                             </div>
                         </div>
                     </form>

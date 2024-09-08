@@ -8,8 +8,8 @@
             </h2>
             <style>
                 .prof-add .prof-head {
-                    background-color: aliceblue;
-                    padding: 15px 0 15px 10px;
+                    background-color: rgb(229, 243, 255);
+                    padding: 15px 0 15px 20px;
                     font-size: 18px;
                     font-weight: 600;
                     color: rgb(39, 39, 39);
@@ -117,7 +117,11 @@
                                 <label class="form-label">State of Residence </label>
                                 <select class="form-select" aria-label="select example" name='state'>
                                     <option value="">Select state</option>
-                                    <option value="20">20</option>
+                                    @forelse ($state as $val)
+                                    <option value="{{$val->name}}" @selected($profile->state == $val->name)>{{$val->name}}</option>
+                                    @empty
+                                    <option value="No state">No state found</option>
+                                    @endforelse
 
                                 </select>
                                 @error('state')
@@ -129,8 +133,12 @@
                             <div class="mb-4">
                                 <label class="form-label">City of Residence </label>
                                 <select class="form-select" aria-label="select example" name='city'>
-                                    <option value="">Select state</option>
-                                    <option value="20">20</option>
+                                    <option value="">Select city</option>
+                                    @forelse ($city as $val)
+                                    <option value="{{$val->city}}" @selected($profile->city == $val->city)>{{$val->city}}</option>
+                                    @empty
+                                    <option value="No city">No City found</option>
+                                    @endforelse
 
                                 </select>
 

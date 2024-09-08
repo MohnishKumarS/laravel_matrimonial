@@ -17,11 +17,11 @@
                 <div class="footer-section-2">
                     <h5>Services</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-check pe-1"></i> Reserved</li>
-                        <li><i class="fa-solid fa-check pe-1"></i> Reserved</li>
-                        <li><i class="fa-solid fa-check pe-1"></i> Reserved</li>
-                        <li><i class="fa-solid fa-check pe-1"></i> Reserved</li>
-                        <li><i class="fa-solid fa-check pe-1"></i> Reserved</li>
+                        <li><i class="fa-solid fa-check pe-1"></i> Register Free</li>
+                        <li><i class="fa-solid fa-check pe-1"></i> Find Partners</li>
+                        <li><i class="fa-solid fa-check pe-1"></i> Intelligent matchmaking</li>
+                        <li><i class="fa-solid fa-check pe-1"></i> Phone-verified</li>
+
                     </ul>
                 </div>
             </div>
@@ -29,11 +29,10 @@
                 <div class="footer-section-3">
                     <h5>Navigation</h5>
                     <ul class="list-unstyled">
-                        <li><a href=""><i class="fa-solid fa-check pe-1"></i> About</a></li>
-                        <li><a href=""><i class="fa-solid fa-check pe-1"></i> Contact</a></li>
-                        <li><a href=""><i class="fa-solid fa-check pe-1"></i> Search</a></li>
-                        <li><a href=""><i class="fa-solid fa-check pe-1"></i> Membership</a></li>
-                        <li><a href=""><i class="fa-solid fa-check pe-1"></i> Disclaimer</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-check pe-1"></i> About</a></li>
+                        <li><a href="{{route('viewPartners')}}"><i class="fa-solid fa-check pe-1"></i>All Profiles</a></li>
+                        <li><a href="{{route('search')}}"><i class="fa-solid fa-check pe-1"></i> Search</a></li>
+                        <li><a href="{{route('contactUs')}}"><i class="fa-solid fa-check pe-1"></i> Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +69,7 @@
         <hr>
         <div class="footer-copyright d-lg-flex justify-content-lg-between text-lg-start text-center ">
             <div>
-                <p class="m-0">Copyright &copy 2023<a href="/">Sowndharyam Matrimony</a> - All Rights Reserved
+                <p class="m-0">Copyright &copy 2024<a href="{{url('/')}}">Sowndharyam Matrimony</a> - All Rights Reserved
                 </p>
             </div>
             <div>

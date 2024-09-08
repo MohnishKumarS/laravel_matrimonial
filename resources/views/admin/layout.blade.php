@@ -5,6 +5,7 @@
     <base href="/public">
      {{--  css stylesheet  --}}
     @include('admin.config.css')
+    @stack('styles')
 
 </head>
 
